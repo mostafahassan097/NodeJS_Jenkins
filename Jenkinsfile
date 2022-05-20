@@ -2,9 +2,9 @@ pipeline {
     agent {label "private_slave"}
     
     environment{
-        rds_host = ""
+        rds_host = "mydb.cgcnycvwq5xu.eu-west-1.rds.amazonaws.com"
         rds_port = 3306
-        redis_host = ""
+        redis_host = "cluster-example.egwlof.0001.euw1.cache.amazonaws.com"
         redis_port = 6379
     }
 
