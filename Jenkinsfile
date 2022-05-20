@@ -20,7 +20,7 @@ pipeline {
 
     stage('Build Image') {
         steps {
-            sh "docker build -f dokcerfile -t mostafahassan/node-js:v5.0 ."
+            sh "docker build -f docker -t mostafahassan/node-js:v5.0 ."
         }
     }
 
