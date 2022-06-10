@@ -1,7 +1,9 @@
 pipeline {
     agent {label "private_slave"}
-    
-    stage('Build Image') {
+
+    stages {
+
+   stage('Build Image') {
         steps {
             sh "docker build -f dockerfile -t mostafahassan/node-js:v3.0 ."
         }
@@ -28,4 +30,5 @@ pipeline {
 
             }
         }
-}
+    }
+    }
