@@ -18,7 +18,6 @@ pipeline {
         }
     }
 
-
     stage('Deploy Application ') {
         steps {
 
@@ -29,5 +28,4 @@ pipeline {
 
             }
         }
-    }
-    }
+}
